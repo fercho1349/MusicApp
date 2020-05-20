@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activities.SplashActivity"
+            android:name=".activities.splash.SplashActivity"
             android:theme="@style/AppTheme.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,5 +21,7 @@
         <activity android:name=".activities.profileUser.ProfileUserActivity"/>
         <activity android:name=".activities.gallery.GalleryActivity"/>
         <activity android:name=".activities.galleryDetail.GalleryDetailActivity"/>
+        <activity android:name=".activities.musicPlayer.MusicPlayerActivity"/>
+        <service android:name=".utils.MusicPlayerService" />
     </application>
 </manifest>

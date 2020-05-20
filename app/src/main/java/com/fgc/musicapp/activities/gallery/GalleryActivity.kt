@@ -24,6 +24,7 @@ import com.squareup.picasso.Picasso
 import androidx.core.util.Pair
 import com.fgc.musicapp.R
 import com.fgc.musicapp.activities.galleryDetail.GalleryDetailActivity
+import com.fgc.musicapp.activities.musicPlayer.MusicPlayerActivity
 import com.fgc.musicapp.models.LocalDataSource
 import com.fgc.musicapp.models.ProfileUser
 import kotlinx.android.synthetic.main.content_main.*
@@ -190,7 +191,7 @@ class GalleryActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
   }
 
   override fun navigationToGalleryDetail() {
-    //startActivity(Intent(this, MusicPlayerActivity::class.java))
+    startActivity(Intent(this, MusicPlayerActivity::class.java))
   }
 
 }
