@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.fgc.musicapp.R
+import com.fgc.musicapp.models.LocalDataSource
 import kotlinx.android.synthetic.main.activity_profile_user.*
 
 class ProfileUserActivity: AppCompatActivity(), ProfileUserContract.ViewInterface, View.OnClickListener {
@@ -19,8 +20,8 @@ class ProfileUserActivity: AppCompatActivity(), ProfileUserContract.ViewInterfac
     }
 
     private fun setupPresenter() {
-        //val dataSource = LocalDataSource(application)
-        //profileUserPresenter = ProfileUserPresenter(this, dataSource)
+        val dataSource = LocalDataSource(application)
+        profileUserPresenter = ProfileUserPresenter(this, dataSource)
     }
 
     override fun showToast(string: String) {
