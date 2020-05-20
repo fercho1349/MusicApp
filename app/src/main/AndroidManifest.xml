@@ -19,5 +19,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.profileUser.ProfileUserActivity"/>
+        <activity android:name=".activities.gallery.GalleryActivity"/>
     </application>
 </manifest>

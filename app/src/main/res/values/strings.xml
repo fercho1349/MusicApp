@@ -4,4 +4,13 @@
     <string name="hint_profile_name">Nombre</string>
     <string name="hint_profile_lastname">Apellido</string>
     <string name="hint_profile_description">Descripción</string>
+    <string name="nav_header_title">Ing. Fernando Gálvez Castillo</string>
+    <string name="nav_header_subtitle">Android Developer Sr.</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Contact Us</string>
+    <string name="communicate">Communicate con el desarrollador</string>
+    <string name="description">Descripción</string>
 </resources>

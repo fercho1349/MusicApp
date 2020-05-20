@@ -1,10 +1,12 @@
 package com.fgc.musicapp.activities.profileUser
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.fgc.musicapp.R
+import com.fgc.musicapp.activities.gallery.GalleryActivity
 import com.fgc.musicapp.models.LocalDataSource
 import kotlinx.android.synthetic.main.activity_profile_user.*
 
@@ -29,7 +31,7 @@ class ProfileUserActivity: AppCompatActivity(), ProfileUserContract.ViewInterfac
     }
 
     override fun navigationToGallery() {
-        //startActivity(Intent(this, GalleryActivity::class.java))
+        startActivity(Intent(this, GalleryActivity::class.java))
         finish()
     }
 
