@@ -20,5 +20,6 @@
         </activity>
         <activity android:name=".activities.profileUser.ProfileUserActivity"/>
         <activity android:name=".activities.gallery.GalleryActivity"/>
+        <activity android:name=".activities.galleryDetail.GalleryDetailActivity"/>
     </application>
 </manifest>

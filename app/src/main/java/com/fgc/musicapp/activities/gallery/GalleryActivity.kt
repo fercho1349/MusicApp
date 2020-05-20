@@ -23,6 +23,7 @@ import com.fgc.musicapp.utils.CircleTransform
 import com.squareup.picasso.Picasso
 import androidx.core.util.Pair
 import com.fgc.musicapp.R
+import com.fgc.musicapp.activities.galleryDetail.GalleryDetailActivity
 import com.fgc.musicapp.models.LocalDataSource
 import com.fgc.musicapp.models.ProfileUser
 import kotlinx.android.synthetic.main.content_main.*
@@ -39,7 +40,7 @@ class GalleryActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
 
   private val onItemClickListener = object : GalleryAdapter.OnItemClickListener {
     override fun onItemClick(view: View, position: Int) {
-      //val transitionIntent = GalleryDetailActivity.newIntent(this@GalleryActivity, position)
+      val transitionIntent = GalleryDetailActivity.newIntent(this@GalleryActivity, position)
 
       val navigationBar = findViewById<View>(android.R.id.navigationBarBackground)
       val statusBar = findViewById<View>(android.R.id.statusBarBackground)
@@ -58,7 +59,7 @@ class GalleryActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
 
       val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this@GalleryActivity,
         *pairs.toTypedArray())
-      //ActivityCompat.startActivity(this@GalleryActivity, transitionIntent, options.toBundle())
+      ActivityCompat.startActivity(this@GalleryActivity, transitionIntent, options.toBundle())
     }
   }
 
