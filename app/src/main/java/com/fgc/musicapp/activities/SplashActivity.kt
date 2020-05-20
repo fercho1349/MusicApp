@@ -1,7 +1,10 @@
-package com.fgc.musicapp
+package com.fgc.musicapp.activities
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.fgc.musicapp.R
+import com.fgc.musicapp.activities.profileUser.ProfileUserActivity
 import kotlin.concurrent.thread
 
 class SplashActivity : AppCompatActivity() {
@@ -17,8 +20,8 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun startMainActivity() {
-        //val intent = Intent(applicationContext, ProfileUserActivity::class.java)
-        //startActivity(intent)
+        val intent = Intent(applicationContext, ProfileUserActivity::class.java)
+        startActivity(intent)
         finish()
     }
 }
